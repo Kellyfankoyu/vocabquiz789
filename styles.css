@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+}
+
+.quiz-container {
+    text-align: center;
+}
+
+.word-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.speak-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1a73e8;
+}
+
+.speak-btn:hover {
+    color: #1557b0;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    padding: 10px;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #e8f0fe;
+}
+
+.option-btn.correct {
+    background-color: #34a853;
+    color: white;
+    border-color: #34a853;
+}
+
+.option-btn.wrong {
+    background-color: #ea4335;
+    color: white;
+    border-color: #ea4335;
+}
+
+.result {
+    margin: 10px 0;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.result-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.result-message.correct {
+    background-color: #e6f4ea;
+    color: #34a853;
+    border: 1px solid #34a853;
+}
+
+.result-message.incorrect {
+    background-color: #fce8e6;
+    color: #ea4335;
+    border: 1px solid #ea4335;
+}
+
+.answers-review {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.results-table th,
+.results-table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.next-btn {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.next-btn:hover {
+    background-color: #1557b0;
+}
